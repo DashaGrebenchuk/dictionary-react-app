@@ -6,7 +6,7 @@ export default function Meaning(props) {
   return (
     <div className="Meaning">
       <h3>{props.meaning.partOfSpeech}</h3>
-      {props.meaning.definitions.map((definition, index) => {
+      {props.meaning.definitions.slice(0, 3).map(function (definition, index) {
         if (definition.example) {
           return (
             <div key={index}>
@@ -23,12 +23,14 @@ export default function Meaning(props) {
             </div>
           );
         } else {
-          <div key={index}>
-            <p>
-              <strong>Definition:</strong>
-              {definition.definition}
-            </p>
-          </div>;
+          return (
+            <div key={index}>
+              <p>
+                <strong>Definition:</strong>
+                {definition.definition}
+              </p>
+            </div>
+          );
         }
       })}
       <Synonyms synonyms={props.meaning.synonyms} />
