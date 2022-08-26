@@ -1,0 +1,12 @@
+.Audio {
+  padding: 4px 10px;
+  border-radius: 50%;
+  border: 1px solid #6163ac;
+  display: inline;
+  margin-bottom: 15px;
+}
+.Audio i {
+  color: #6163ac;
+  font-size: 24px;
+  line-height: 1.5;
+}

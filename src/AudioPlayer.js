@@ -1,4 +1,5 @@
 import React from "react";
+import "./AudioPlayer.css";
 
 export default function AudioPlayer(props) {
   let audio = new Audio(props.audio);
@@ -7,8 +8,8 @@ export default function AudioPlayer(props) {
     audio.play();
   };
   return (
-    <button onClick={start}>
-      <i className="fa-solid fa-circle-play" onClick={start}></i>
+    <button className="Audio" onClick={start}>
+      <i className="fa-solid fa-circle-play"></i>
     </button>
   );
 }

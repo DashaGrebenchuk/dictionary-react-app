@@ -1,5 +1,6 @@
 import React from "react";
 import AudioPlayer from "./AudioPlayer";
+import "./Phonetics.css";
 
 export default function Phonetics(props) {
   return (
@@ -7,11 +8,9 @@ export default function Phonetics(props) {
       {props.phonetics.map((phonetic, index) => {
         if (phonetic.audio && phonetic.text) {
           return (
-            <div className="phonetics" key={index}>
-              <div>
-                <AudioPlayer audio={phonetic.audio} />
-              </div>
-              <div>{phonetic.text}</div>
+            <div key={index}>
+              <AudioPlayer audio={phonetic.audio} />
+              <h3>{phonetic.text}</h3>
             </div>
           );
         } else {

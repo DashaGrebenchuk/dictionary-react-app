@@ -1,3 +1,32 @@
-.Dictionary-search-form {
-  text-align: center;
+.Dictionary {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.Dictionary section {
+  background-color: #c9bbcf;
+  margin: 20px;
+  padding: 20px 30px;
+  border-radius: 12px;
+  box-shadow: 5px 5px 12px rgba(0, 0, 0, 0.2);
+}
+.Dictionary h1 {
+  font-size: 32px;
+}
+
+.Dictionary input {
+  display: block;
+  height: 52px;
+  color: #666;
+  font-size: 18px;
+  padding: 18px;
+  margin-bottom: 20px;
+  margin-top: 15px;
+  border: 1px solid rgb(125, 125, 125);
+  border-radius: 8px;
+  width: 100%;
+}
+.Dictionary .hint {
+  font-size: 13px;
+  margin-left: 10px;
 }
