@@ -12,6 +12,7 @@ export default function Photos(props) {
                   <img
                     src={photo.src.landscape}
                     className="img-fluid rounded mb-3 mt-3"
+                    alt={photo.alt}
                   />
                 </a>
               </div>
